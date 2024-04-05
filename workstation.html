@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="css/workstationstyle.css">
+</head>
+<body>
+
+    <div class="user-icon" onclick="toggleDropdown()">
+        <img src="images/user.png" alt="User Icon">
+        <div class="dropdown-content" id="dropdownContent">
+            <a href="#">Sign Out</a>
+            <a href="#">My Details</a>
+            <a href="#">Add New User</a>
+            <a href="#">Update User</a>
+            <a href="#">Delete User</a>
+        </div>
+    </div>
+
+    <div class="workstation-form-container">
+            
+        <form class="workstation-form">
+            <h2>Workstation Form</h2>
+            <div class="input-group">
+                <label for="district">District:</label>
+                <select id="district" name="district" required>
+                    <option value="">Select District</option>
+                    <option value="district1">Ampara</option>
+                    <option value="district2">Anuradhapura</option>
+                    <option value="district1">Badulla</option>
+                    <option value="district2">Batticaloa</option>
+                    <option value="district1">Colombo</option>
+                    <option value="district2">Galle</option>
+                    <option value="district1">Gampaha</option>
+                    <option value="district2">Hambantota</option>
+                    <option value="district1">Jaffna</option>
+                    <option value="district2">Kalutara</option>
+                    <option value="district1">Kandy</option>
+                    <option value="district2">Kegalla</option>
+                    <option value="district1">Kilinochchi</option>
+                    <option value="district2">Kurunegala</option>
+                    <option value="district1">Mannar</option>
+                    <option value="district2">Matale </option>
+                    <option value="district1">Matara </option>
+                    <option value="district2">Moneragala </option>
+                    <option value="district1">Mullaitivu </option>
+                    <option value="district2">Nuwara Eliya </option>
+                    <option value="district1">Polonnaruwa</option>
+                    <option value="district2">Puttalam	</option>
+                    <option value="district1">Ratnapura</option>
+                    <option value="district2">Trincomalee</option>
+                    <option value="district1">Vavuniya</option>
+                
+                    <!-- Add more options for other districts -->
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="temperature">Temperature:</label>
+                <input type="number" id="temperature" name="temperature" required>
+            </div>
+            <div class="input-group">
+                <label for="humidity">Humidity:</label>
+                <input type="number" id="humidity" name="humidity" required>
+            </div>
+            <div class="input-group">
+                <label for="air-pressure">Air Pressure:</label>
+                <input type="number" id="air-pressure" name="air-pressure" required>
+            </div>
+            <button type="submit">Update</button>
+        </form>
+    </div>
+    <script src="userscript.js"></script>
+</body>
+</html>
